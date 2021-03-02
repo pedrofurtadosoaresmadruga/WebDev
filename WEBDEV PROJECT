@@ -1,0 +1,30 @@
+var titulo = document.querySelector(".titulo");
+
+titulo.textContent = "MDC Academia";
+
+console.log(titulo.textContent);
+
+//var trCliente = document.querySelector(".cliente");
+
+
+var Clientes = document.querySelectorAll(".cliente");
+    
+
+
+for(var i = 0;i < Clientes.length;i++){
+    var trCliente = Clientes[i];
+
+    var tdPeso = document.querySelector(".info-peso");
+    var peso = tdPeso.textContent;
+
+    var tdAltura = document.querySelector(".info-altura");
+    var Altura = tdAltura.textContent;
+    
+    var Imc = peso / (Altura * Altura);
+    
+    var tdImc = trCliente.querySelector(".info-imc");
+    
+    tdImc.textContent = Imc.toFixed;
+
+
+}
